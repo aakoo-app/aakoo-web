@@ -35,9 +35,9 @@ interface Props {
 const AppBrand = () => {
   return (
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
-      <img src='...' alt='logo' width='30' height='30' />
+      <img src='/images/logo.png' alt='logo' width='30' height='30' />
       <Typography variant='h6' sx={{ ml: 2 }}>
-        Aakoo
+        <strong>AAKOO</strong>
       </Typography>
     </Box>
   )
@@ -106,10 +106,8 @@ const UserDefaultLayout = ({ children, contentHeightFixed }: Props) => {
       })}
     >
       {children}
-
     </Layout>
   )
 }
 
 export default UserDefaultLayout
-

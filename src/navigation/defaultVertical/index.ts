@@ -10,7 +10,7 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'Analytics',
           path: '/dashboards/analytics'
-        },
+        }
       ]
     },
 
@@ -21,7 +21,7 @@ const navigation = (): VerticalNavItemsType => {
         {
           title: 'List',
           path: '/apps/user/list'
-        },
+        }
         // {
         //   title: 'View',
         //   children: [
@@ -48,8 +48,7 @@ const navigation = (): VerticalNavItemsType => {
         //   ]
         // }
       ]
-    },
-
+    }
   ]
 }
 

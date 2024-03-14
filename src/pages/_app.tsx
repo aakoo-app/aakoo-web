@@ -30,8 +30,8 @@ import 'src/@fake-db'
 import { Toaster } from 'react-hot-toast'
 
 // ** Component Imports
-import UserDefaultLayout from 'src/layouts/UserLayout'
-// import UserDefaultLayout from 'src/layouts/UserDefaultLayout'
+// import UserDefaultLayout from 'src/layouts/UserLayout'
+import UserDefaultLayout from 'src/layouts/UserDefaultLayout'
 import AclGuard from 'src/@core/components/auth/AclGuard'
 import ThemeComponent from 'src/@core/theme/ThemeComponent'
 import AuthGuard from 'src/@core/components/auth/AuthGuard'
@@ -123,13 +123,13 @@ const App = (props: ExtendedAppProps) => {
     <Provider store={store}>
       <CacheProvider value={emotionCache}>
         <Head>
-          <title>{`${themeConfig.templateName} - Material Design React Admin Template`}</title>
-          <meta
+          <title>{`${themeConfig.templateName} - Admin`}</title>
+          {/* <meta
             name='description'
             content={`${themeConfig.templateName} – Material Design React Admin Dashboard Template – is the most developer friendly & highly customizable Admin Dashboard Template based on MUI v5.`}
           />
           <meta name='keywords' content='Material Design, MUI, Admin Template, React Admin Template' />
-          <meta name='viewport' content='initial-scale=1, width=device-width' />
+          <meta name='viewport' content='initial-scale=1, width=device-width' /> */}
         </Head>
 
         <AuthProvider>
