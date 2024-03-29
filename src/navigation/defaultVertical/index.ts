@@ -3,16 +3,16 @@ import { VerticalNavItemsType } from 'src/@core/layouts/types'
 
 const navigation = (): VerticalNavItemsType => {
   return [
-    {
-      title: 'Dashboards',
-      icon: 'mdi:home-outline',
-      children: [
-        {
-          title: 'Analytics',
-          path: '/dashboards/analytics'
-        }
-      ]
-    },
+    // {
+    //   title: 'Dashboards',
+    //   icon: 'mdi:home-outline',
+    //   children: [
+    //     {
+    //       title: 'Analytics',
+    //       path: '/dashboards/analytics'
+    //     }
+    //   ]
+    // },
 
     {
       title: 'Applications',
@@ -21,7 +21,7 @@ const navigation = (): VerticalNavItemsType => {
     },
 
     {
-      title: 'User',
+      title: 'Identity',
       icon: 'mdi:account-outline',
       children: [
         {
