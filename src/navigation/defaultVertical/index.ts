@@ -15,6 +15,12 @@ const navigation = (): VerticalNavItemsType => {
     },
 
     {
+      title: 'Applications',
+      icon: 'mdi:account-outline',
+      path: '/apps/appkeys/list'
+    },
+
+    {
       title: 'User',
       icon: 'mdi:account-outline',
       children: [

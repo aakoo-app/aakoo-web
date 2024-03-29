@@ -2,12 +2,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 
 // ** Reducers
+import appkeys from 'src/store/apps/appkeys'
+import calendar from 'src/store/apps/calendar'
 import chat from 'src/store/apps/chat'
-import user from 'src/store/apps/user'
 import email from 'src/store/apps/email'
 import invoice from 'src/store/apps/invoice'
-import calendar from 'src/store/apps/calendar'
 import permissions from 'src/store/apps/permissions'
+import user from 'src/store/apps/user'
 
 export const store = configureStore({
   reducer: {
@@ -16,7 +17,8 @@ export const store = configureStore({
     email,
     invoice,
     calendar,
-    permissions
+    permissions,
+    appkeys,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({

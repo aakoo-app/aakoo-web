@@ -1,6 +1,6 @@
 // ** Redux Imports
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { Dispatch } from 'redux'
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
 // ** Axios Imports
 import axios from 'axios'
@@ -23,6 +23,7 @@ export const fetchData = createAsyncThunk('appUsers/fetchData', async (params: D
     params
   })
 
+  console.log('use fetch data', response.data)
   return response.data
 })
 
@@ -34,6 +35,8 @@ export const addUser = createAsyncThunk(
       data
     })
     dispatch(fetchData(getState().user.params))
+
+
 
     return response.data
   }
